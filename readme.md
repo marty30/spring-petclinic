@@ -12,9 +12,9 @@
 
 or alternatively you can use
 ```
-git clone https://github.com/marty30/spring-petclinic.git
-cd spring-petclinic
-docker-compose up -d
+    git clone https://github.com/marty30/spring-petclinic.git
+    cd spring-petclinic
+    docker-compose up -d
 ```
 
 You can then access petclinic here: http://localhost:8080/
