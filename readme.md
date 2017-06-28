@@ -1,13 +1,20 @@
-# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
+# Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinichttps://travis-ci.org/marty30/spring-petclinic.png?branch=master)](https://travis-ci.org/marty30/spring-petclinic/)
 
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
 ## Running petclinic locally
 ```
-	git clone https://github.com/spring-projects/spring-petclinic.git
+	git clone https://github.com/marty30/spring-petclinic.git
 	cd spring-petclinic
 	./mvnw spring-boot:run
+```
+
+or alternatively you can use
+```
+git clone https://github.com/marty30/spring-petclinic.git
+cd spring-petclinic
+docker-compose up -d
 ```
 
 You can then access petclinic here: http://localhost:8080/
@@ -17,18 +24,6 @@ You can then access petclinic here: http://localhost:8080/
 ## In case you find a bug/suggested improvement for Spring Petclinic
 Our issue tracker is available here: https://github.com/spring-projects/spring-petclinic/issues
 
-
-## Database configuration
-
-In its default configuration, Petclinic uses an in-memory database (HSQLDB) which
-gets populated at startup with data. A similar setup is provided for MySql in case a persistent database configuration is needed.
-Note that whenever the database type is changed, the data-access.properties file needs to be updated and the mysql-connector-java artifact from the pom.xml needs to be uncommented.
-
-You could start a MySql database with docker:
-
-```
-docker run -e MYSQL_ROOT_PASSWORD=petclinic -e MYSQL_DATABASE=petclinic -p 3306:3306 mysql:5.7.8
-```
 
 ## Working with Petclinic in Eclipse/STS
 
@@ -46,7 +41,7 @@ If m2e is not there, just follow the install process here: http://eclipse.org/m2
 
 1) In the command line
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
+git clone https://github.com/marty30/spring-petclinic.git
 ```
 2) Inside Eclipse
 ```
@@ -58,9 +53,9 @@ File -> Import -> Maven -> Existing Maven project
 
 |Spring Boot Configuration | Class or Java property files  |
 |--------------------------|---|
-|The Main Class | [PetClinicApplication](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java) |
-|Properties Files | [application.properties](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/resources) |
-|Caching | [CacheConfig](https://github.com/spring-projects/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/system/CacheConfig.java) |
+|The Main Class | [PetClinicApplication](https://github.com/marty30/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java) |
+|Properties Files | [application.properties](https://github.com/marty30/spring-petclinic/blob/master/src/main/resources) |
+|Caching | [CacheConfig](https://github.com/marty30/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/system/CacheConfig.java) |
 
 ## Interesting Spring Petclinic branches and forks
 
